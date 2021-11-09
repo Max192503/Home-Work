@@ -1,6 +1,6 @@
 package by.overone.lessons18;
 
-public class Pair<K, V> {
+public class  Pair<K, V> {
     private K num;
     private V id;
 

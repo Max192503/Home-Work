@@ -1,10 +1,9 @@
 package by.overone.lessons18;
 
-public class Solution<T extends Number>extends ClassForGenerics implements InterfaceForGenerics {
+public class Solution<T extends Number> extends ClassForGenerics implements InterfaceForGenerics {
     T num;
 
-    public Solution(T num) {
-        this.num = num;
+    public Solution() {
     }
 
     public T getNum() {
@@ -15,8 +14,8 @@ public class Solution<T extends Number>extends ClassForGenerics implements Inter
         this.num = num;
     }
 
-    public static <T extends Number> Number sum(Solution<T> number) {
-        T num = number.getNum();
+    public static <T extends Number> Number multiply(Solution<T> number) {
+        T num =  number.getNum();
         if (num instanceof Integer) {
             return num.intValue() * 2;
         } else if (num instanceof Double) {
