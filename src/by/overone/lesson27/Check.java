@@ -138,4 +138,3 @@ public class Check {
         testers.stream().map(name -> name.getName()).forEach(System.out::println);
     }
 }
-                                       
